@@ -1,0 +1,8 @@
+<resources>
+    <color name="bg">#F5F5F5</color>
+    <color name="card">#FFFFFF</color>
+    <color name="text">#000000</color>
+    <color name="textHint">#777777</color>
+    <color name="button">#6200EE</color>
+    <color name="white">#FFFFFF</color>
+</resources>
