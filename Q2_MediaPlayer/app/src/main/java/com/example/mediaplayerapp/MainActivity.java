@@ -75,13 +75,11 @@ public class MainActivity extends AppCompatActivity {
         // ⏹ STOP
         stopBtn.setOnClickListener(v -> {
             if (mediaPlayer != null) {
-                mediaPlayer.pause();
-                mediaPlayer.seekTo(0); // go to start
+                mediaPlayer.stop();
+                mediaPlayer.release();
+                mediaPlayer = null;
             }
-            if (videoView != null && videoView.isPlaying()) {
-                videoView.pause();
-                videoView.seekTo(0); // reset instead of destroying
-            }
+            if (videoView != null) videoView.stopPlayback();
         });
 
         // 🔄 RESTART
